@@ -7,8 +7,8 @@ const HomeEventCards = ({ Cards }) => {
 
   return (
     <div>
-      <div>
-        <h1>Our Services</h1>
+      <div className="flex justify-center text-lg font-semibold font-poppins border bg-slate-300 p-5 m-8 ">
+        <h1>We Provide Services</h1>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
