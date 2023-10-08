@@ -1,5 +1,9 @@
 import { useLoaderData } from "react-router-dom";
 import HomeEventCards from "../components/HomeEventCards";
+import image from "../../public/images/music comment-chinchure-ZhQCZjr9fHo-unsplash.jpg";
+import client1 from "../../public/images/logan-weaver-lgnwvr-MXnkWolg3Ug-unsplash.jpg";
+import client2 from "../../public/images/samuel-raita-RiDxDgHg7pw-unsplash.jpg";
+import client3 from "../../public/images/vidar-nordli-mathisen-qusExK3sba8-unsplash.jpg";
 
 const Home = () => {
   const Cards = useLoaderData();
@@ -23,15 +27,66 @@ const Home = () => {
       <div className="">
         <HomeEventCards className=" " Cards={Cards}></HomeEventCards>
       </div>
+      {/* card section end */}
+
+      {/* happy client section start */}
+      <div className="mt-10 mb-10">
+        <div className="flex justify-center text-lg font-semibold font-poppins border bg-slate-300 p-5 m-8 ">
+          <h1>Our Happy Client</h1>
+        </div>
+        <div className="grid justify-center md:grid-cols-2  lg:grid-cols-3 max-w-7xl mx-auto md:pl-10 space-y-3">
+          <div className="card w-80 bg-base-100 shadow-xl">
+            <figure className="px-10 pt-3 ">
+              <img src={client3} alt="" className="h-40 w-40 rounded-full" />
+            </figure>
+            <div className="card-body items-center ">
+              <h2 className="card-title">Sarah Johnson</h2>
+              <p>
+                Attending the music festival was an absolute blast! The lineup
+                was incredible, and the atmosphere was electric. I danced the
+                night away with friends and made unforgettable memories. Can't
+                wait for next year!
+              </p>
+            </div>
+          </div>
+          <div className="card w-80 bg-base-100 shadow-xl">
+            <figure className="px-10 pt-3 ">
+              <img src={client2} alt="" className="h-40 w-40 rounded-full" />
+            </figure>
+            <div className="card-body items-center ">
+              <h2 className="card-title">John Smith</h2>
+              <p>
+                The comedy show was a riot! I haven't laughed that hard in
+                years. The comedian's humor was on point, and the audience
+                engagement was fantastic. A perfect night out for some
+                much-needed laughter!
+              </p>
+            </div>
+          </div>
+          <div className="card w-80 bg-base-100 shadow-xl">
+            <figure className="px-10 pt-3 ">
+              <img src={client1} alt="" className="h-40 w-40 rounded-full" />
+            </figure>
+            <div className="card-body items-center">
+              <h2 className="card-title">Emily Davis</h2>
+              <p>
+                The sports event was absolutely thrilling! The atmosphere in the
+                stadium was electric, and the competition on the field was
+                intense. Cheering for my favorite team alongside passionate fans
+                made it an unforgettable experience. I can't wait for the next
+                game!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* happy client section end */}
 
       {/* comment section */}
       <div className="bg-slate-700">
         <div className="hero min-h-screen bg-base-200">
           <div className="hero-content flex-col lg:flex-row">
-            <img
-              src="/images/stock/photo-1635805737707-575885ab0820.jpg"
-              className="max-w-sm rounded-lg shadow-2xl"
-            />
+            <img src={image} className="max-w-sm rounded-lg shadow-2xl" />
             <div>
               <h1 className="text-xl font-bold pl-10">
                 Please Leave Us Comment!
@@ -61,7 +116,7 @@ const Home = () => {
                 <div className="space-y-2">
                   <label>Write a Comment:</label> <br></br>
                   <textarea
-                    className=" textarea textarea-accent h-40 w-[220px] sm:w-[250px] md:w-[400px]"
+                    className=" textarea textarea-accent h-24 w-[220px] sm:w-[250px] md:w-[400px]"
                     placeholder="Comment..."
                   ></textarea>
                 </div>
