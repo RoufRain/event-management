@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Concerts and Music Festivals",
+    "price": 499.99,
+    "description": "Concerts and music festivals are vibrant gatherings of music enthusiasts. They showcase diverse genres, from rock and pop to classical and EDM, providing a platform for artists to perform live. Audiences can immerse themselves in the electrifying atmosphere, dancing to their favorite tunes or discovering new ones. These events often feature renowned musicians and emerging talents, creating unforgettable experiences filled with melody and rhythm.",
+    "image": "https://i.ibb.co/68FLZV9/redd-f-q-MFSP1x-YVTQ-unsplash.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Theater and Performing Arts",
+    "price": 899.99,
+    "description": "A powerful laptop for work and gaming.",
+    "image": "https://i.ibb.co/3r8DtRv/kyle-head-p6r-NTd-APbuk-unsplash.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Film Screenings",
+    "price": 79.99,
+    "description": "Wireless headphones with noise-cancellation.",
+    "image": "https://i.ibb.co/w7B9V9J/zhifei-zhou-XO4-A1p-WBEb-E-unsplash.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Comedy Shows",
+    "price": 149.99,
+    "description": "A stylish smartwatch with fitness tracking.",
+    "image": "https://i.ibb.co/ct4kgQM/chauhan-moniz-3-A0bs74-T8zc-unsplash.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Sports Events",
+    "price": 399.99,
+    "description": "A high-resolution DSLR camera for photography enthusiasts.",
+    "image": "https://i.ibb.co/zHBnsRh/rob-wingate-Il-Uq-SRJYp8c-unsplash.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Cultural Celebrations",
+    "price": 299.99,
+    "description": "A compact tablet for entertainment and productivity.",
+    "image": "https://i.ibb.co/gJTyxwq/ruben-hutabarat-QZa-Yf-Cbnjig-unsplash.jpg"
+  }
+]
