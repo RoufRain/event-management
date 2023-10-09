@@ -10,35 +10,35 @@
     "id": 2,
     "name": "Theater and Performing Arts",
     "price": 899.99,
-    "description": "A powerful laptop for work and gaming.",
+    "description": "Theater and performing arts events transport attendees into imaginative worlds through the magic of storytelling. Whether it's a thought-provoking drama, a whimsical musical, or a captivating dance performance, these events offer a profound cultural experience. They often explore complex themes, emotions, and human connections, leaving audiences both entertained and enlightened by the power of live performance..",
     "image": "https://i.ibb.co/3r8DtRv/kyle-head-p6r-NTd-APbuk-unsplash.jpg"
   },
   {
     "id": 3,
     "name": "Film Screenings",
     "price": 79.99,
-    "description": "Wireless headphones with noise-cancellation.",
+    "description": "Film screenings and premieres are cinematic celebrations, where movie enthusiasts gather to watch the latest films on the big screen. Premieres allow audiences to be among the first to witness a new movie's debut, often in the presence of the cast and crew. These events offer a unique opportunity to engage with filmmakers and gain insight into the art of storytelling through film.",
     "image": "https://i.ibb.co/w7B9V9J/zhifei-zhou-XO4-A1p-WBEb-E-unsplash.jpg"
   },
   {
     "id": 4,
     "name": "Comedy Shows",
     "price": 149.99,
-    "description": "A stylish smartwatch with fitness tracking.",
+    "description": "Comedy shows bring laughter and joy to audiences, featuring stand-up comedians who skillfully deliver humorous anecdotes and witty observations. These events create an atmosphere of mirth and amusement, providing a much-needed break from everyday life. Comedy shows can be an excellent way to relieve stress and share a hearty laugh with friends and fellow comedy enthusiasts.",
     "image": "https://i.ibb.co/ct4kgQM/chauhan-moniz-3-A0bs74-T8zc-unsplash.jpg"
   },
   {
     "id": 5,
     "name": "Sports Events",
     "price": 399.99,
-    "description": "A high-resolution DSLR camera for photography enthusiasts.",
+    "description": "Sports events are thrilling spectacles that unite fans in their passion for athleticism and competition. Whether it's a high-stakes football match, an adrenaline-pumping Formula 1 race, or an intense basketball game, sports events offer a sense of community and excitement. Fans cheer for their favorite teams or athletes, fostering a spirit of camaraderie and shared enthusiasm.",
     "image": "https://i.ibb.co/zHBnsRh/rob-wingate-Il-Uq-SRJYp8c-unsplash.jpg"
   },
   {
     "id": 6,
     "name": "Cultural Celebrations",
     "price": 299.99,
-    "description": "A compact tablet for entertainment and productivity.",
+    "description": "Cultural events celebrate the rich diversity of human heritage, showcasing art, music, dance, and traditions from around the world. These events often include food festivals, art exhibitions, and cultural performances. Attendees can immerse themselves in different cultures, gaining a deeper appreciation for global diversity and fostering cross-cultural understanding.",
     "image": "https://i.ibb.co/gJTyxwq/ruben-hutabarat-QZa-Yf-Cbnjig-unsplash.jpg"
   }
 ]

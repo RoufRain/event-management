@@ -17,69 +17,48 @@ const About = () => {
         <div className="grid justify-center md:grid-cols-2  lg:grid-cols-3 max-w-7xl mx-auto md:pl-10 space-y-3">
           <div className="card w-80 bg-base-100 shadow-xl">
             <div className="card-body items-center ">
-              <h2 className="card-title">Event Planning and Coordination</h2>
+              <h2 className="card-title">Our Vision</h2>
               <p>
-                Entertainment event management companies take charge of every
-                aspect of event planning, from conceptualization to execution.
-                They work closely with clients to understand their vision,
-                budget, and goals, and then craft a tailored plan to turn that
-                vision into reality.
+                Our vision is to be recognized as a global leader in the
+                entertainment event management industry, known for our
+                unwavering commitment to creativity, precision, and client
+                satisfaction. We envision a world where every event we touch
+                becomes a masterpiece, where audiences are transported into
+                magical realms of entertainment, and where our name is
+                synonymous with outstanding event experiences. We aspire to
+                inspire, delight, and unite people through the power of
+                entertainment.
               </p>
             </div>
           </div>
           <div className="card w-80 bg-base-100 shadow-xl">
             <div className="card-body items-center ">
-              <h2 className="card-title">Venue Selection and Management</h2>
+              <h2 className="card-title">Our Approach</h2>
               <p>
-                Choosing the right venue is crucial to the success of any event.
-                These companies have the expertise to identify suitable
-                locations, negotiate contracts, and manage all logistical
-                aspects of the venue, including seating, staging, and technical
-                requirements.
+                At EventIment, we approach every project with a unique blend of
+                creativity and precision. We understand that successful events
+                require meticulous planning, artistic flair, and flawless
+                execution. Our approach is based on: Tailored Solutions: We
+                collaborate closely with our clients to understand their
+                specific goals and visions, crafting customized event plans that
+                align perfectly with their objectives. Attention to Detail: We
+                leave no stone unturned when it comes to event logistics,
+                technical requirements, and safety measures.
               </p>
             </div>
           </div>
           <div className="card w-80 bg-base-100 shadow-xl">
             <div className="card-body items-center">
-              <h2 className="card-title">Artist and Talent Management</h2>
+              <h2 className="card-title">Our Goals</h2>
               <p>
-                Securing top-notch performers, artists, and talent is a
-                specialty of event management companies. They handle
-                negotiations, contracts, and logistics to ensure that artists
-                are well-prepared and the audience is entertained to the
-                fullest.
-              </p>
-            </div>
-          </div>
-          <div className="card w-80 bg-base-100 shadow-xl">
-            <div className="card-body items-center">
-              <h2 className="card-title">Production and Technical Support</h2>
-              <p>
-                Event management companies oversee the technical aspects of an
-                event, including sound, lighting, visuals, and special effects.
-                They collaborate with technical teams to ensure flawless
-                execution, creating a captivating and immersive experience.
-              </p>
-            </div>
-          </div>
-          <div className="card w-80 bg-base-100 shadow-xl">
-            <div className="card-body items-center">
-              <h2 className="card-title">Marketing and Promotion</h2>
-              <p>
-                Successful events require effective marketing and promotion
-                strategies. These companies develop comprehensive marketing
-                plans, manage advertising campaigns, and leverage social media
-                to create buzz and sell tickets.
-              </p>
-            </div>
-          </div>
-          <div className="card w-80 bg-base-100 shadow-xl">
-            <div className="card-body items-center">
-              <h2 className="card-title">Security and Safety</h2>
-              <p>
-                Ensuring the safety and security of attendees is paramount.
-                Event management companies work with security professionals to
-                implement robust safety measures and emergency response plans.
+                Our primary goal at EventIment Entertainment Event Management is
+                to create unforgettable and immersive entertainment experiences
+                that leave a lasting impact on audiences. We strive to be at the
+                forefront of event innovation, consistently pushing the
+                boundaries to deliver exceptional, one-of-a-kind entertainment
+                events. Whether it's a music festival, a theater production, or
+                a sports extravaganza, our aim is to exceed expectations and set
+                new standards for excellence in event management.
               </p>
             </div>
           </div>

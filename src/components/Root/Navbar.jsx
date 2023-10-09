@@ -58,23 +58,23 @@ const Navbar = () => {
             {navLinks}
           </ul>
         </div>
-        <h3 className="btn btn-ghost normal-case text-xl">
-          great intertainment!
-        </h3>
+        <h3 className="btn btn-ghost normal-case text-xl">EventI.ment!</h3>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">{navLinks}</ul>
+        <ul className="menu menu-horizontal px-1 text-lg font-normal">
+          {navLinks}
+        </ul>
       </div>
 
       <div className="lg:navbar-end space-x-1">
         {/* if user logged in then logout button show */}
         {user ? (
           <>
-            <span>{user.email}</span>
+            <span className="text-lg">{user.email}</span>
             <span>
               <label tabIndex={0} className="">
                 <div className=" ">
-                  <img src={FaCircleUser} className="h-10 w-10 rounded-full" />
+                  <FaCircleUser className="h-10 w-10"> </FaCircleUser>
                 </div>
               </label>
             </span>

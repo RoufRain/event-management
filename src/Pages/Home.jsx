@@ -1,6 +1,8 @@
 import { useLoaderData } from "react-router-dom";
 import HomeEventCards from "../components/HomeEventCards";
 import image from "../../public/images/music comment-chinchure-ZhQCZjr9fHo-unsplash.jpg";
+
+import bgimage from "../../public/images/bg image.jpg";
 import client1 from "../../public/images/logan-weaver-lgnwvr-MXnkWolg3Ug-unsplash.jpg";
 import client2 from "../../public/images/samuel-raita-RiDxDgHg7pw-unsplash.jpg";
 import client3 from "../../public/images/vidar-nordli-mathisen-qusExK3sba8-unsplash.jpg";
@@ -12,13 +14,24 @@ const Home = () => {
   return (
     <div className="">
       <div>
-        <div className="hero min-h-[400px]" style={{}}>
+        <div
+          className="hero min-h-screen"
+          style={{
+            backgroundImage: `url(${bgimage})`,
+          }}
+        >
           <div className="hero-overlay bg-opacity-50"></div>
           <div className="hero-content text-center text-neutral-content">
-            <div className="">
+            <div className="space-y-10">
+              <h2 className="text-lg font-poppins text-black">
+                We are The Event Specialist
+              </h2>
               <h1 className="mb-5 text-[black] text-5xl font-bold">
-                I Grow By Helping People In Need
+                CELEBRATE YOUR EVENTS LAST LONGER
               </h1>
+              <h2 className="text-lg font-poppins text-black">
+                Explore Your Event Now...
+              </h2>
             </div>
           </div>
         </div>
@@ -30,12 +43,12 @@ const Home = () => {
       {/* card section end */}
 
       {/* happy client section start */}
-      <div className="mt-10 mb-10">
+      <div className="mt-10 mb-10 p-10 bg-slate-400">
         <div className="flex justify-center text-lg font-semibold font-poppins border bg-slate-300 p-5 m-8 ">
           <h1>Our Happy Client</h1>
         </div>
         <div className="grid justify-center md:grid-cols-2  lg:grid-cols-3 max-w-7xl mx-auto md:pl-10 space-y-3">
-          <div className="card w-80 bg-base-100 shadow-xl">
+          <div className="card w-96 md:w-80 bg-base-100 shadow-xl">
             <figure className="px-10 pt-3 ">
               <img src={client3} alt="" className="h-40 w-40 rounded-full" />
             </figure>
@@ -49,7 +62,7 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <div className="card w-80 bg-base-100 shadow-xl">
+          <div className="card w-96 md:w-80 bg-base-100 shadow-xl">
             <figure className="px-10 pt-3 ">
               <img src={client2} alt="" className="h-40 w-40 rounded-full" />
             </figure>
@@ -63,11 +76,11 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <div className="card w-80 bg-base-100 shadow-xl">
+          <div className="card w-96 md:w-80 bg-base-100 shadow-xl">
             <figure className="px-10 pt-3 ">
               <img src={client1} alt="" className="h-40 w-40 rounded-full" />
             </figure>
-            <div className="card-body items-center">
+            <div className=" card-body items-center">
               <h2 className="card-title">Emily Davis</h2>
               <p>
                 The sports event was absolutely thrilling! The atmosphere in the
@@ -132,10 +145,10 @@ const Home = () => {
       {/* footer */}
       <footer className="footer footer-center p-10 bg-slate-500 text-base-content rounded">
         <nav className="grid grid-flow-col gap-4">
+          <a className="link link-hover">Home</a>
+          <a className="link link-hover">Services</a>
           <a className="link link-hover">About us</a>
           <a className="link link-hover">Contact</a>
-          <a className="link link-hover">Jobs</a>
-          <a className="link link-hover">Press kit</a>
         </nav>
         <nav>
           <div className="grid grid-flow-col gap-4">
@@ -175,7 +188,7 @@ const Home = () => {
           </div>
         </nav>
         <aside>
-          <p>Copyright © 2023 - All right reserved by ACME Industries Ltd</p>
+          <p>Copyright © 2023 - All right reserved by Entertainment Event</p>
         </aside>
       </footer>
     </div>

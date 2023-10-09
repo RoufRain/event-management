@@ -21,7 +21,9 @@ const Contact = () => {
         <div className="grid justify-center md:grid-cols-2  lg:grid-cols-3 max-w-7xl mx-auto md:pl-10 space-y-3">
           <div className="card w-80 bg-blue-400 shadow-xl">
             <div className="flex justify-center mt-10 ">
-              <img className="h-10 w-10 " src={GrMapLocation} />
+              <p>
+                <GrMapLocation className="h-12 w-12"></GrMapLocation>
+              </p>
             </div>
             <div className="card-body items-center ">
               <h2 className="card-title">Address</h2>
@@ -30,7 +32,9 @@ const Contact = () => {
           </div>
           <div className="card w-80 bg-red-400 shadow-xl">
             <div className="flex justify-center mt-10 ">
-              <img className="h-10 w-10" src={BsTelephoneInbound} />
+              <p>
+                <BsTelephoneInbound className="h-12 w-12"></BsTelephoneInbound>
+              </p>
             </div>
             <div className="card-body items-center ">
               <h2 className="card-title">Phone</h2>
@@ -39,7 +43,9 @@ const Contact = () => {
           </div>
           <div className="card w-80 bg-green-400 shadow-xl">
             <div className="flex justify-center mt-10 ">
-              <img className="h-10" src={HiOutlineMail} />
+              <p>
+                <HiOutlineMail className="h-12 w-12"></HiOutlineMail>
+              </p>
             </div>
             <div className="card-body items-center">
               <h2 className="card-title">Email</h2>
