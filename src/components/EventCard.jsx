@@ -6,7 +6,7 @@ const EventCard = ({ card }) => {
 
   return (
     <div>
-      <div className="flex justify-center m-5">
+      <div className="flex justify-center m-5" data-aos="fade-up">
         <div className="relative flex w-11/12 flex-col rounded-xl text-gray-700 shadow-md">
           <div className="relative mx-2 mt-2 h-[250px] overflow-hidden rounded-xl text-gray-700">
             <img className="h-full w-full" src={image} />

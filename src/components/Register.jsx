@@ -24,14 +24,14 @@ const Register = () => {
     //check credential password validate
     //let regularExpression = /^[a-zA-Z0-9!@#$%^&*]{6,16}$/;
     if (password.length < 6) {
-      swal("password should not less than 6 characters", "error");
+      swal("Password should not less than 6 characters");
       return;
-      // } else if (!/A-Z/.test(password)) {
-      //   swal("password should contain atleast one capital letter", "error");
-      //   return;
-      // } else if (!/@#$%^&*/.test(password)) {
-      //   swal("password should contain one special character", "error");
-      //   return;
+    } else if (!/[A-Z]/.test(password)) {
+      swal("Password should contain atleast one Capital letter");
+      return;
+    } else if (!/[@#$%^&*]/.test(password)) {
+      swal("Password should contain one Special character");
+      return;
     }
 
     //create user

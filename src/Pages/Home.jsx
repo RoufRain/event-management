@@ -22,7 +22,12 @@ const Home = () => {
         >
           <div className="hero-overlay bg-opacity-50"></div>
           <div className="hero-content text-center text-neutral-content">
-            <div className="space-y-10">
+            <div
+              className="space-y-10"
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000"
+            >
               <h2 className="text-lg font-poppins text-black">
                 We are The Event Specialist
               </h2>
@@ -48,7 +53,11 @@ const Home = () => {
           <h1>Our Happy Client</h1>
         </div>
         <div className="grid justify-center md:grid-cols-2  lg:grid-cols-3 max-w-7xl mx-auto md:pl-10 space-y-3">
-          <div className="card w-96 md:w-80 bg-base-100 shadow-xl">
+          <div
+            className="card w-80 lg:w-96 bg-base-100 shadow-xl"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
             <figure className="px-10 pt-3 ">
               <img src={client3} alt="" className="h-40 w-40 rounded-full" />
             </figure>
@@ -62,7 +71,10 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <div className="card w-96 md:w-80 bg-base-100 shadow-xl">
+          <div
+            className="card w-80 lg:w-96 bg-base-100 shadow-xl"
+            data-aos="fade-up"
+          >
             <figure className="px-10 pt-3 ">
               <img src={client2} alt="" className="h-40 w-40 rounded-full" />
             </figure>
@@ -76,7 +88,11 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <div className="card w-96 md:w-80 bg-base-100 shadow-xl">
+          <div
+            className="card w-80 lg:w-96 bg-base-100 shadow-xl"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
             <figure className="px-10 pt-3 ">
               <img src={client1} alt="" className="h-40 w-40 rounded-full" />
             </figure>
@@ -98,8 +114,15 @@ const Home = () => {
       {/* comment section */}
       <div className="bg-slate-700">
         <div className="hero min-h-screen bg-base-200">
-          <div className="hero-content flex-col lg:flex-row">
-            <img src={image} className="max-w-sm rounded-lg shadow-2xl" />
+          <div
+            className="hero-content flex-col lg:flex-row"
+            data-aos="zoom-in-up"
+            data-aos-duration="2000"
+          >
+            <img
+              src={image}
+              className="w-[250px] md:w-[400px] rounded-lg shadow-2xl"
+            />
             <div>
               <h1 className="text-xl font-bold pl-10">
                 Please Leave Us Comment!
