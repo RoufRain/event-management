@@ -7,10 +7,9 @@
 * After succesfuly register and login, Users picture and email will show in the right corner of navigation bar.
 * User can send message or comment or opinion.
 * This project is responsive for Desktop,Mobile and Tablet.
+* Use AOS effect in this project
 
 
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Project Name: EventIment (Entertainent event management)
+live link: https://event-management-32d23.web.app/
