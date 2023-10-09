@@ -1,9 +1,14 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../Provider/AuthProvider";
+import swal from "sweetalert";
 
 const Register = () => {
   const { createUser } = useContext(AuthContext);
+
+  //for show success messeage
+
+  //   const [success, setSuccess] = useState('');
 
   const handleRegister = (e) => {
     e.preventDefault();
@@ -16,13 +21,28 @@ const Register = () => {
     const password = form.get("password");
     console.log(name, photo, email, password);
 
+    //check credential password validate
+    //let regularExpression = /^[a-zA-Z0-9!@#$%^&*]{6,16}$/;
+    if (password.length < 6) {
+      swal("password should not less than 6 characters", "error");
+      return;
+      // } else if (!/A-Z/.test(password)) {
+      //   swal("password should contain atleast one capital letter", "error");
+      //   return;
+      // } else if (!/@#$%^&*/.test(password)) {
+      //   swal("password should contain one special character", "error");
+      //   return;
+    }
+
     //create user
     createUser(email, password)
       .then((result) => {
         console.log(result.user);
+        swal("Registration Successful!", "success");
       })
       .catch((error) => {
         console.log(error);
+        swal("Already Registered!", "error");
       });
   };
 

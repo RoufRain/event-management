@@ -1,10 +1,19 @@
 import { useContext } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../Provider/AuthProvider";
+import { GoogleAuthProvider, getAuth, signInWithPopup } from "firebase/auth";
+import app from "../firebase/firebase.config";
+import { FcGoogle } from "react-icons/fc";
+import swal from "sweetalert";
 
 const Login = () => {
   //sign in functionality get form authprovider
   const { logIn } = useContext(AuthContext);
+
+  //for google sign in
+  const auth = getAuth(app);
+  console.log(app);
+  const provider = new GoogleAuthProvider();
 
   //use for location which is decleard in event details page
   const location = useLocation();
@@ -23,9 +32,24 @@ const Login = () => {
     logIn(email, password)
       .then((result) => {
         console.log(result.user);
+        e.target.reset();
+        swal("Login Successful!", "success");
 
         //navigate after login
         navigate(location?.state ? location.state : "/");
+      })
+      .catch((error) => {
+        console.log(error);
+        swal("Credential Does Not Match!", "Error");
+      });
+  };
+
+  //signin wiht google
+  const handleGoogleSignIn = () => {
+    signInWithPopup(auth, provider)
+      .then((result) => {
+        const user = result.user;
+        console.log(user);
       })
       .catch((error) => {
         console.log(error);
@@ -66,6 +90,15 @@ const Login = () => {
             </div>
             <div className="form-control mt-6">
               <button className="btn btn-primary">Login</button>
+            </div>
+
+            <div className="flex justify-center">
+              <button
+                onClick={handleGoogleSignIn}
+                className="flex justify-center items-center p-1 text-md font-semibold bg-zinc-100 rounded-md border w-28"
+              >
+                <FcGoogle className="h-6 w-6"></FcGoogle>LOGIN
+              </button>
             </div>
 
             <label className="label">

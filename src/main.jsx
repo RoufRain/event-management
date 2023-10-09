@@ -12,6 +12,9 @@ import Register from "./components/Register";
 import AuthProvider from "./Provider/AuthProvider";
 import Services from "./Pages/Services";
 import EventDetails from "./components/EventDetails";
+import About from "./Pages/About";
+import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
+import Contact from "./Pages/Contact";
 
 const router = createBrowserRouter([
   {
@@ -26,11 +29,22 @@ const router = createBrowserRouter([
       },
       {
         path: "/EventDetails/:id",
+        element: <EventDetails> </EventDetails>,
+      },
+      {
+        path: "/about",
         element: (
-          <privateRoute>
-            {" "}
-            <EventDetails> </EventDetails>{" "}
-          </privateRoute>
+          <PrivateRoute>
+            <About></About>
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "/contact",
+        element: (
+          <PrivateRoute>
+            <Contact></Contact>
+          </PrivateRoute>
         ),
       },
       {

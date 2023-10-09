@@ -1,9 +1,10 @@
 import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
+import { FaCircleUser } from "react-icons/fa6";
 
 const Navbar = () => {
-  //context theke acces korte hobe
+  //context theke acces kore niye asce
   const { user, logOut } = useContext(AuthContext);
 
   //for handling signOut
@@ -22,8 +23,10 @@ const Navbar = () => {
         <NavLink to="/Services">Services</NavLink>{" "}
       </li>
       <li>
-        {" "}
-        <NavLink to="/About">About </NavLink>
+        <NavLink to="/about">About </NavLink>
+      </li>
+      <li>
+        <NavLink to="/Contact">Contact </NavLink>
       </li>
     </>
   );
@@ -63,18 +66,23 @@ const Navbar = () => {
         <ul className="menu menu-horizontal px-1">{navLinks}</ul>
       </div>
 
-      <div className="lg:navbar-end">
-        <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-          <div className="w-10 rounded-full">
-            <img src="" />
-          </div>
-        </label>
-
+      <div className="lg:navbar-end space-x-1">
         {/* if user logged in then logout button show */}
         {user ? (
-          <button onClick={handleLogOut} className="btn">
-            LogOut
-          </button>
+          <>
+            <span>{user.email}</span>
+            <span>
+              <label tabIndex={0} className="">
+                <div className=" ">
+                  <img src={FaCircleUser} className="h-10 w-10 rounded-full" />
+                </div>
+              </label>
+            </span>
+
+            <button onClick={handleLogOut} className="btn btn-md">
+              LogOut
+            </button>
+          </>
         ) : (
           <Link to={"/login"}>
             <button className="btn">Login</button>
