@@ -39,7 +39,7 @@ const Contact = () => {
           </div>
           <div className="card w-80 bg-green-400 shadow-xl">
             <div className="flex justify-center mt-10 ">
-              <img className="h-10 w-10" src={HiOutlineMail} />
+              <img className="h-10" src={HiOutlineMail} />
             </div>
             <div className="card-body items-center">
               <h2 className="card-title">Email</h2>
