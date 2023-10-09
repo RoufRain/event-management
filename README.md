@@ -11,5 +11,5 @@
 
 
 
-# Project Name: EventIment (Entertainent event management)
+# Project Name: EventIment (Entertainment event management)
 live link: https://event-management-32d23.web.app/
